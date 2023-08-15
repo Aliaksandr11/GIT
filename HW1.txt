@@ -76,7 +76,7 @@ cat >> preferences.json
      {
         "ID": "A1",
         "Title": "Нажатие кнопки 'Оплатить' на главной странице не перенаправляет на страницу оплаты",
-        "Project": "Сайт быстрых покупок 'Покупочка.com'",
+        "Project": "Книжный интернет магазин 'Book4u.com'",
         "STR": [
                 "1. Зайти на главную страницу сайта (ссылка_на_сайт)",
                 "2. Нажать кнопку Оплатить"
@@ -93,7 +93,7 @@ cat >> preferences.json
         "Severity": "Critical",
         "Priority": "High",
         "Status": "Open",
-        "Author": "Александр Викторович",
+        "Author": "Цветков Александр",
         "Sign to": "Лещенко Владимир",
         "Attachments": "ссылка_на_картинку_или_видео_с_багом"
      }
@@ -175,6 +175,8 @@ XML
 
  36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
      choose файл bug_report.xml -->> click edit
+     
+     
 
  37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
      click Commit changes
@@ -247,30 +249,27 @@ TXT
 
  16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
      click bug_report --> edit file
-     {
-        "ID": "A1",
-        "Title": "Нажатие кнопки 'Оплатить' на главной странице не перенаправляет на страницу оплаты",
-        "Project": "Сайт быстрых покупок 'Покупочка.com'",
-        "STR": [
-                "1. Зайти на главную страницу сайта (ссылка_на_сайт)",
-                "2. Нажать кнопку Оплатить"
-        ],
-        "Enviroment":
-        {
-                "OS": "Windows 11 x64 build 21H2",
-                "Browser": "Google Chrome v96.0.4664.45 x64"
-        },
-        "Component": "Кнопка Оплатить",
-        "Build": "0.5.7",
-        "Actual result": "Нажатие кнопки Оплатить НЕ перенаправляет на страницу Оплаты",
-        "Expected result": "Нажатие кнопки Оплатить перенаправляет на страницу Оплаты",
-        "Severity": "Critical",
-        "Priority": "High",
-        "Status": "Open",
-        "Author": "Александр Викторович",
-        "Sign to": "Лещенко Владимир",
-        "Attachments": "ссылка_на_картинку_или_видео_с_багом"
-}
+        <ID>:A1</ID>
+        <Title>:Нажатие кнопки 'Оплатить' на главной странице не перенаправляет на страницу оплаты</Title>
+        <Project>: Книжный интернет магазин 'Book4u.com'</Project>
+        <STR>:
+               <one>1.Зайти на главную страницу сайта (ссылка_на_сайт)</one>
+               <two>2.Нажать кнопку Оплатить</two>
+        </STR>
+        <Enviroment>: 
+                     <OS>: Windows 11 x64 build 21H2</OS>
+                     <Browser>: Google Chrome v96.0.4664.45 x64</Browser>
+                     <Component>: Кнопка Оплатить</Component>
+        </Enviroment>
+        <Build>:0.5.7</Build>
+        <Actual result>: Нажатие кнопки Оплатить НЕ перенаправляет на страницу Оплаты</Actual result>
+        <Expected result>: Нажатие кнопки Оплатить перенаправляет на страницу Оплаты</Expected result>
+        <Severity>: Critical</Severity>
+        <Priority>: High</Priority>
+        <Status>: Open</Status>
+        <Author>: Цветков Александр</Author>
+        <Sign to>: Лещенко Владимир</Sign to>
+        <Attachments>: ссылка_на_картинку_или_видео_с_багом</Attachments>
       
  17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
      click commit new file
