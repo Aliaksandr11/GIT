@@ -26,8 +26,10 @@ JSON
         "Pets number": 4,
         "Salary": "1000$"
      }
+
  11. Отправить изменения на внешний репозиторий.
-     git push -f
+     git commit -am "info"
+     git push
 
  12. Создать файл preferences.json
      touch preferences.json
