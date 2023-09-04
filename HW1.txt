@@ -205,6 +205,7 @@ XML
      click Commit changes
 
  38. Синхронизировать внешний и локальный репозиторий XML
+     git fetch
      git pull
 
 36_channel, [11.08.2023 11:06]
@@ -297,4 +298,5 @@ TXT
      click commit new file
 
  18. Синхронизировать внешний и локальный репозиторий TXT
+     git fetch
      git pull
